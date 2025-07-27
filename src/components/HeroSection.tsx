@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
-import heroImage from '@/assets/hero-logistics.jpg';
+import truckHighwayImage from '@/assets/truck-highway.jpg';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -36,9 +36,9 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${truckHighwayImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/75 via-primary/60 to-brand-green/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/50"></div>
       </div>
 
       {/* Main Content */}
@@ -89,7 +89,7 @@ const HeroSection = () => {
             </Button>
             
             <Button 
-              variant="hero-outline"
+              variant="hero-secondary"
               size="lg" 
               onClick={scrollToServices}
               className="px-8 py-4 text-lg rounded-xl"
@@ -116,7 +116,7 @@ const HeroSection = () => {
               </div>
               <div className="text-center">
                 <div className="font-semibold text-lg mb-2">Email Us</div>
-                <div className="text-sm text-white/90">westmakinvestments@gmail.com</div>
+                <div className="text-sm text-white/90">quotes@wmlogistics.com</div>
               </div>
             </div>
             
@@ -126,7 +126,7 @@ const HeroSection = () => {
               </div>
               <div className="text-center">
                 <div className="font-semibold text-lg mb-2">Visit Us</div>
-                <div className="text-sm text-white/90">Ruvimbo, Chinhoyi</div>
+                <div className="text-sm text-white/90">Ruvimbo, Chinhoyi, Zimbabwe</div>
               </div>
             </div>
           </div>

@@ -21,6 +21,7 @@ const buttonVariants = cva(
         brand: "bg-brand-green text-brand-green-foreground hover:bg-brand-green/90 shadow-sm",
         "brand-outline": "border-2 border-brand-green bg-transparent text-brand-green hover:bg-brand-green hover:text-brand-green-foreground font-semibold",
         "hero-primary": "bg-brand-green text-white hover:bg-brand-green/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-semibold",
+        "hero-secondary": "bg-white text-corporate-blue border-2 border-white hover:bg-corporate-blue hover:text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-semibold",
         "hero-outline": "border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary font-semibold transition-all duration-300"
       },
       size: {

@@ -24,6 +24,9 @@ All colors MUST be HSL.
     --brand-green: 150 75% 40%; /* Accent Green #00A859 */
     --brand-green-foreground: 0 0% 100%;
 
+    --corporate-blue: 220 85% 25%; /* Corporate Dark Blue */
+    --corporate-blue-foreground: 0 0% 100%;
+
     --secondary: 210 20% 96%;
     --secondary-foreground: 220 25% 15%;
 
@@ -92,6 +95,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-montserrat;
   }
 }

@@ -45,18 +45,15 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center text-white pt-20">
         <div className="max-w-5xl mx-auto space-y-8">
           
-          {/* Logo/Company Name */}
+          {/* Main Headline */}
           <div className="space-y-6">
-            <div className="flex justify-center">
-              <img 
-                src="/lovable-uploads/5a5e514e-216a-4c06-84c7-7cc7b1d98146.png" 
-                alt="WESTMAK LOGISTICS" 
-                className="h-32 md:h-48 lg:h-56 w-auto drop-shadow-2xl filter brightness-110"
-              />
-            </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
               Your Logistics Partner
             </h1>
+            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Your trusted partner for comprehensive logistics solutions, delivering excellence 
+              across road transport, freight forwarding, and supply chain management.
+            </p>
           </div>
 
           {/* Tagline */}
@@ -70,11 +67,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Description */}
-          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Your trusted partner for comprehensive logistics solutions, delivering excellence 
-            across road transport, freight forwarding, and supply chain management.
-          </p>
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center py-8">

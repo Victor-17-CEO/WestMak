@@ -2,20 +2,14 @@ import containerPortImage from '@/assets/container-port.jpg';
 import supplyChainImage from '@/assets/supply-chain.jpg';
 import globalNetworkImage from '@/assets/global-network.jpg';
 import airFreightImage from '@/assets/air-freight.jpg';
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-background">
+  return <section id="about" className="bg-background py-[20px]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
-              <img 
-                src={containerPortImage} 
-                alt="Container Port Operations" 
-                className="w-full h-[400px] lg:h-[500px] object-cover"
-              />
+              <img src={containerPortImage} alt="Container Port Operations" className="w-full h-[400px] lg:h-[500px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-brand-green/20"></div>
             </div>
             
@@ -84,11 +78,7 @@ const AboutSection = () => {
         <div className="mt-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative overflow-hidden rounded-2xl shadow-xl group">
-              <img 
-                src={globalNetworkImage} 
-                alt="Global Logistics Network" 
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <img src={globalNetworkImage} alt="Global Logistics Network" className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <h4 className="text-xl font-bold mb-2">Global Network</h4>
@@ -97,11 +87,7 @@ const AboutSection = () => {
             </div>
             
             <div className="relative overflow-hidden rounded-2xl shadow-xl group">
-              <img 
-                src={airFreightImage} 
-                alt="Air Freight Operations" 
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <img src={airFreightImage} alt="Air Freight Operations" className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-green/70 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <h4 className="text-xl font-bold mb-2">Air Freight</h4>
@@ -111,8 +97,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;

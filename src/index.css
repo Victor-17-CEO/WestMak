@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    /* WESTMAK Brand Colors */
+    --primary: 220 100% 50%; /* Vibrant Blue #0033A0 */
+    --primary-foreground: 0 0% 100%;
+    
+    --brand-green: 150 75% 40%; /* Accent Green #00A859 */
+    --brand-green-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 220 25% 15%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 15% 50%;
+
+    --accent: 150 75% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 220 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom Design Tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(220 100% 30%), hsl(150 75% 35%));
+    --gradient-section: linear-gradient(180deg, hsl(220 100% 30% / 0.95), hsl(150 75% 35% / 0.95));
+    --shadow-logistics: 0 10px 40px -10px hsl(220 100% 30% / 0.3);
+    --shadow-card: 0 4px 20px hsl(220 100% 30% / 0.1);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 25% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 25% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 220 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --brand-green: 150 75% 50%;
+    --brand-green-foreground: 0 0% 100%;
+
+    --secondary: 220 25% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 25% 15%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 150 75% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 220 25% 15%;
+    --input: 220 25% 15%;
+    --ring: 220 100% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

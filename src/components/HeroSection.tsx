@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
 import truckHighwayImage from '@/assets/truck-highway.jpg';
+import westmakLogo from '@/assets/WhatsApp_Image_2025-07-22_at_15.00.27_cb85b778-removebg-preview.png';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -43,38 +44,45 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center text-white pt-20">
-        <div className="max-w-5xl mx-auto space-y-8">
+        <div className="max-w-5xl mx-auto space-y-8 sm:space-y-6">
           
+          {/* Logo */}
+          <img 
+            src={westmakLogo}
+            alt="WM Logistics Logo"
+            className="mx-auto mb-8 w-48 sm:w-64 md:w-80"
+          />
+
           {/* Main Headline */}
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
+          <div className="space-y-6 sm:space-y-4">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white px-2">
               Your Logistics Partner
             </h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-4">
               Your trusted partner for comprehensive logistics solutions, delivering excellence 
               across road transport, freight forwarding, and supply chain management.
             </p>
           </div>
 
           {/* Tagline */}
-          <div className="text-xl md:text-2xl lg:text-3xl font-semibold text-white/95 py-4">
-            <div className="flex items-center justify-center space-x-4">
-              <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">PICKUP</span>
-              <span className="text-2xl">•</span>
-              <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">DELIVER</span>
-              <span className="text-2xl">•</span>
-              <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">OFFLOAD</span>
+          <div className="text-lg md:text-2xl lg:text-3xl font-semibold text-white/95 py-4">
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 px-4">
+              <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm sm:text-base">PICKUP</span>
+              <span className="text-xl sm:text-2xl">•</span>
+              <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm sm:text-base">DELIVER</span>
+              <span className="text-xl sm:text-2xl">•</span>
+              <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm sm:text-base">OFFLOAD</span>
             </div>
           </div>
 
 
           {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center py-8">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center py-6 sm:py-8">
             <Button 
               variant="hero-primary"
               size="lg" 
               onClick={scrollToContact}
-              className="px-8 py-4 text-lg rounded-xl"
+              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg rounded-xl w-full sm:w-auto"
             >
               Get Free Quote
               <ArrowRight className="ml-2" size={20} />
@@ -84,41 +92,41 @@ const HeroSection = () => {
               variant="hero-secondary"
               size="lg" 
               onClick={scrollToServices}
-              className="px-8 py-4 text-lg rounded-xl"
+              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg rounded-xl w-full sm:w-auto"
             >
               Our Services
             </Button>
           </div>
 
           {/* Contact Information Cards */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8">
-            <div className="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <div className="flex items-center justify-center mb-3">
-                <Phone className="text-white" size={28} />
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto pt-6 sm:pt-8">
+            <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <div className="flex items-center justify-center mb-2 sm:mb-3">
+                <Phone className="text-white" size={24} />
               </div>
               <div className="text-center">
-                <div className="font-semibold text-lg mb-2">Call Us</div>
-                <div className="text-sm text-white/90">+27 7744 498950</div>
+                <div className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Call Us</div>
+                <div className="text-xs sm:text-sm text-white/90">+27 7744 498950</div>
               </div>
             </div>
             
-            <div className="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <div className="flex items-center justify-center mb-3">
-                <Mail className="text-white" size={28} />
+            <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <div className="flex items-center justify-center mb-2 sm:mb-3">
+                <Mail className="text-white" size={24} />
               </div>
               <div className="text-center">
-                <div className="font-semibold text-lg mb-2">Email Us</div>
-                <div className="text-sm text-white/90">quotes@wmlogistics.com</div>
+                <div className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Email Us</div>
+                <div className="text-xs sm:text-sm text-white/90">quotes@wmlogistics.com</div>
               </div>
             </div>
             
-            <div className="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <div className="flex items-center justify-center mb-3">
-                <MapPin className="text-white" size={28} />
+            <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <div className="flex items-center justify-center mb-2 sm:mb-3">
+                <MapPin className="text-white" size={24} />
               </div>
               <div className="text-center">
-                <div className="font-semibold text-lg mb-2">Visit Us</div>
-                <div className="text-sm text-white/90">Ruvimbo, Chinhoyi, Zimbabwe</div>
+                <div className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Visit Us</div>
+                <div className="text-xs sm:text-sm text-white/90">Ruvimbo, Chinhoyi, Zimbabwe</div>
               </div>
             </div>
           </div>

@@ -121,27 +121,6 @@ const ContactSection = () => {
                 );
               })}
             </div>
-
-            {/* Video Placeholder */}
-            <Card className="mt-6 border-0 shadow-lg bg-white">
-              <CardHeader>
-                <CardTitle className="text-center text-primary">
-                  Watch Our Story
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="aspect-video bg-gradient-to-br from-primary/10 to-brand-green/10 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                      <div className="w-0 h-0 border-l-[12px] border-l-primary border-y-[8px] border-y-transparent ml-1"></div>
-                    </div>
-                    <p className="text-muted-foreground text-sm">
-                      Learn more about our logistics solutions
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Contact Form */}

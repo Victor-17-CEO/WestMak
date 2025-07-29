@@ -131,30 +131,6 @@ const FleetGallerySection = () => {
           </div>
         </div>
 
-        {/* Scrollable Gallery for Mobile */}
-        <div className="md:hidden">
-          <div className="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
-            {fleetImages.map((image, index) => (
-              <div
-                key={image.id}
-                className="flex-shrink-0 w-80 rounded-xl overflow-hidden shadow-lg"
-                onClick={() => goToSlide(index)}
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4 bg-white">
-                  <p className="text-sm font-medium text-foreground">
-                    {image.caption}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Fleet Stats */}
         <div className="grid md:grid-cols-3 gap-8 mt-12 max-w-3xl mx-auto">
           <div className="text-center">
